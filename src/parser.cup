@@ -17,7 +17,7 @@ parser code {:
 :}
 
 terminal        ARRAYLIST, DOUBLE, IMAGE, INTEGER, STRING, FALSE, TRUE; 
-terminal        ITEM, PANEL, PET, SOUND;
+terminal        ITEM, PANEL, PET, SHOP, SOUND, STORE;
 terminal        BREAK, CONTINUE, DO, EXTENDS, FOR, IF, RETURN, VOID, WHILE, FINAL;
 terminal        DEF, DEF_BTN, DEF_TIMER;
 
