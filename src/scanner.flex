@@ -73,7 +73,9 @@ DOUBLE             = [0-9]+ ("."[0-9]+)?
 "Panel"            { return token(sym.PANEL);}
 "Pet"              { return token(sym.PET);}
 "return"           { return token(sym.RETURN);}
+"Shop"             { return token(sym.SHOP);}
 "Sound"            { return token(sym.SOUND);}
+"Store"            { return token(sym.STORE);}
 "string"           { return token(sym.STRING);}
 "true"             { return token(sym.TRUE);}
 "void"             { return token(sym.VOID);}
