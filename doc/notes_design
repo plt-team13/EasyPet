@@ -1,0 +1,21 @@
+attr
+Attribute: an attribute of a pet
+     1. Change according to time.
+     2. Change according to action.
+     3. The effect of one attribute on other attributes, e.g., the age effect on height.
+
+
+def
+Action: Manipulate on one/serveral attributes; mapping to a button on the GUI.
+
+
+item
+Item: an item is a thing contains one/several attributes, e.g., a sausage contains "health" etc, plant contains "oxygen".
+      If a pet get this item, then update the attributes of the pet.
+
+
+string
+
+int
+
+float

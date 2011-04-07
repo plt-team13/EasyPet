@@ -1,0 +1,78 @@
+Simple Scratch Language(SSL)
+
+*****Primitive type*****
+
+1. int
+2. float
+4. array
+
+
+*****Extended type*****
+
+1. Panel
+2. Point(int x, int y, float angle)
+
+
+*****Operator*****
+
+1. + / - / * / \ / ( / )
+
+2. && / || / ==
+
+
+*****Control block*****
+
+1. forever {
+
+   }
+
+2. repeat [int i] {
+
+   }
+
+3. if() {
+
+   } else{
+  
+   }
+
+4. break
+
+
+*****Internal function*****
+
+1. go(float d) // Go via opposite direction to the coordinator if d is less than zero
+
+2. turn(float a) // When the a is larger than 360, we need to mod with 360
+
+3. getCurrentPoint() // In our back-end system, we need to maintain the status (x, y, angle) of current point
+
+
+*****Sample program*****
+
+We are using this program to draw a star.
+
+
+main() {
+
+    Panel startPanel = new Panel(500,500);
+    Point point = new Point(); // Central point
+    paint_star(panel, point); // Call subroutine
+}
+
+paint_star(Panel panel, Point startPoint) {
+    int index = 0;
+    Point currentPoint;
+    forever {
+        currentPoint = getCurrentPoint();
+        // if the end point is equal to start point (Only compare the x, y; without angle)
+        if (currentPoint == startPoint && index != 0) {
+            break;
+        }
+        go(100); // paint a line with length of 100px
+        turn(144); // take a turn of angle of 144 degree
+        index = index + 1;
+    }
+}
+
+
